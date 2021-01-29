@@ -10,7 +10,7 @@ import { AdminService } from 'src/app/_services/admin.service';
   styleUrls: ['./user-management.component.css']
 })
 export class UserManagementComponent implements OnInit {
-  users: any[];
+  users: Partial<User[]>;
   bsModalRef: BsModalRef;
 
   constructor(private adminService: AdminService, private modalService: BsModalService) { }
